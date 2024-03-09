@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+</head>
+<body>
+    <img id="ferrarithebest" src="media/ferraripic.jpg" alt="">
+
+    <script>
+        var imageElement = document.getElementById("ferrarithebest");
+        var originalImage = "media/ferraripic.jpg";
+        var newImage = "media/redbullpic.jpg";
+
+        function changeImage() {
+            imageElement.src = newImage;
+        }
+
+        function revertImage() {
+            imageElement.src = originalImage;
+        }
+    </script>
+
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="revertImage()">Revert Image</button>
+</body>
+</html>
